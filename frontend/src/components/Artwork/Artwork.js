@@ -4,6 +4,9 @@ import styled from "@emotion/styled";
 import tw from "tailwind.macro";
 
 import { BodyText } from "../Typography/Typography"
+import Button from "../Button/Button"
+import expand_icon from "./expand.svg"
+import link_icon from "./link.svg"
 
 // Name, artist, source, title...leave the rest, oncloser
 const blurringImage = props => css`
@@ -23,6 +26,7 @@ ${tw`w-full border-4 border-pink hover:border-black h-80 relative`}
 ${blurringImage}
 `;
 
+            // <Button img_src={expand_icon} onClick={() => props.onFeature} text="Closer" />
 const Artwork = (props) => (
     // 
     <Container url={props.artwork.img_url} css={tw`text-white`}>
@@ -32,7 +36,10 @@ const Artwork = (props) => (
             <BodyText css={tw`text-pink`}>by</BodyText>
             <BodyText css={tw`mb-3`}>{props.artwork.artist}</BodyText>
             <BodyText css={tw`text-pink`}>from</BodyText>
-            <BodyText css={tw`mb-3`}>{props.artwork.display_org}</BodyText>
+            <BodyText css={tw`mb-3`}>{props.artwork.origin}</BodyText>
+            <BodyText css={tw`text-pink`}>made</BodyText>
+            <BodyText css={tw`mb-3`}>{props.artwork.date}</BodyText>
+            <a css={tw`text-blue font-text no-underline`} href={`https://www.artic.edu/artworks/${props.artwork.id}`}>Check it out!</a>
             </div>
         </div>
     </Container>

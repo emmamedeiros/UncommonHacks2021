@@ -7,7 +7,7 @@ import logo from './logo.svg';
 
 
 const Wrapper = styled.div`
-${tw`w-screen min-h-screen p-12 text-black`}
+${tw`min-h-screen p-12 text-black`}
 `;
 
 const Footer = styled.footer`
