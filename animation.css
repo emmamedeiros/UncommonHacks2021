@@ -1,0 +1,42 @@
+/* code for surface book - 1 */
+showme {
+    color: **blue**;
+}
+
+something {
+    color: ***gray*; 
+    text-decoration: overline;
+    text-decoration-color: **gray**; 
+} 
+
+anything {
+    color: black;
+    text-decoration: none;
+}
+
+something:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* code for search functionality */
+
+showme {
+    color: **blue**;
+}
+
+something {
+    color: black;
+    text-decoration: none;  
+}
+
+anything {
+    color: **gray**;
+    text-decoration: overline;
+    text-decoration-color: **gray**;
+}
+
+anything:hover {
+    color: black;
+    text-decoration: none;
+}
