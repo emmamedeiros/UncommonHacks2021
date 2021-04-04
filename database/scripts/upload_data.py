@@ -53,7 +53,7 @@ def main():
     print('Cleaning Art Institute data')
     df_artic = get_artic()
 
-    print('Cleaning Met data')
+    # print('Cleaning Met data')
     # df_met = get_met()
 
     df_all = pd.concat([df_artic])
